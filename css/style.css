@@ -4,7 +4,7 @@ html {
 }
 body{
   font-family: "Hiragino Mincho Pro", "MS P明朝", "Times", serif;
-  color: #1d1d1d;
+  color: #fff;
   width: 100%;
   max-width: 800px;
   align-items: center;
@@ -19,13 +19,14 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px 10px 20px;
+  background-color: #fff;
 }
 
 .fv_header h1 {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   font-weight: 500;
-  font-size: min(5.8vw, 30px);
+  font-size: min(5.8vw, 42px);
   color: rgb(114, 84, 82);
   line-height: 1;
   text-align: center;
@@ -51,14 +52,24 @@ header img:nth-child(2) {
 
 .benefit {
   width: 100%;
-  position: relative;
-  z-index: 0;
   padding-top: 14%;
   padding-bottom: 14%;
-  background: url(../images/benefit_back2.png) center center no-repeat;
-  background-size: contain;
-  background-attachment: fixed;
   text-align: center;
+}
+
+.benefit::before {
+  content:"";
+  display:block;
+  position:fixed;
+  top:0;
+  left:0;
+  z-index:-1;
+  width:100%;
+  height:100vh;
+  background-repeat:no-repeat;
+  background-position:50% 100%;
+  background-image:url(../images/benefit_back.png);
+  background-size:cover;
 }
 
 .benefit img:first-child{
@@ -103,7 +114,6 @@ h2 {
   font-size: min(7.2vw, 56px);
   font-weight: normal;
   background-color: #c0827f;
-  color: #fff;
 }
 
 h2::after {
@@ -270,4 +280,16 @@ footer {
   line-height: 2.5rem;
   color: #fff;
   letter-spacing: 0.03em;
+}
+
+@media (min-width:801px) {
+  .benefit {
+    background: url(../images/benefit_back.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  }
+
+  .benefit::before {
+    display: none;
+  }
 }
