@@ -19,13 +19,11 @@ body{
   justify-content: space-between;
   align-items: center;
   padding: 10px 16px 10px 20px;
-  padding-right: 16px;
-  padding-left: 20px;
 }
 
 .fv_header h1 {
   display: inline-block;
-  font-family: "Oswald";
+  font-family: 'Oswald', sans-serif;
   font-weight: 500;
   font-size: min(5.8vw, 30px);
   color: rgb(114, 84, 82);
@@ -57,7 +55,7 @@ header img:nth-child(2) {
   z-index: 0;
   padding-top: 14%;
   padding-bottom: 14%;
-  background: url(../images/benefit_back.png) center center no-repeat;
+  background: url(../images/benefit_back2.png) center center no-repeat;
   background-size: cover;
   background-attachment: fixed;
   text-align: center;
