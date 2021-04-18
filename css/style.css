@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html {
+  font-size: 100%;
+}
+body{
+  font-family: "Hiragino Mincho Pro", "MS P明朝", "Times", serif;
+  color: #1d1d1d;
+  width: 100%;
+  max-width: 800px;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.fv_header {
+  height: 10vh;
+  max-height: 154px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 16px 10px 20px;
+  padding-right: 16px;
+  padding-left: 20px;
+}
+
+.fv_header h1 {
+  display: inline-block;
+  font-family: "Oswald";
+  font-weight: 500;
+  font-size: min(5.8vw, 30px);
+  color: rgb(114, 84, 82);
+  line-height: 1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  transform: scale(1, 0.75);
+}
+
+.fv_header a {
+  margin: 0%;
+  padding: 0;
+  line-height: .85;
+}
+
+.fv_header img {
+  width: min(48vw, 250px);
+  object-fit: contain;
+}
+
+header img:nth-child(2) {
+  width: 100%;
+  vertical-align: top;
+}
+
+.benefit {
+  width: 100%;
+  position: relative;
+  z-index: 0;
+  padding-top: 14%;
+  padding-bottom: 14%;
+  background: url(../images/benefit_back.png) center center no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+}
+
+.benefit img:first-child{
+  width: 94%;
+  margin-bottom: 14%;
+}
+
+.benefit img:nth-child(2) {
+  width: 100%;
+}
+
+.benefit img:nth-child(3) {
+  width: 100%;
+  margin-top: 8%;
+}
+
+.benefit img:nth-child(4),
+.benefit img:nth-child(5) {
+  width: 100%;
+  margin-top: 17%;
+}
+
+.action {
+  padding: 12% 0;
+  background-color: #fff;
+}
+
+.action img {
+  display: block;
+  width: min(64%, 380px);
+  margin: 0 auto;
+}
+
+.merit {
+  background-color: #fff3eb;
+  text-align: center;
+}
+
+h2 {
+  position: relative;
+  padding: 9.5%;
+  font-size: min(7.2vw, 56px);
+  font-weight: normal;
+  background-color: #c0827f;
+  color: #fff;
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: min(5.5vw, 40px) solid #fff3ed;
+  border-top-color: #c0827f;
+  top: 100%;
+  right: 44%;
+  z-index: 1;
+}
+
+.merit img {
+  width: 100%;
+}
+
+.merit img:nth-child(2) {
+  margin-top: 13%;
+}
+
+.merit img:nth-child(3) {
+  margin-top: 16%;
+  vertical-align: top;
+}
+
+.shop {
+  background-image: url(../images/shop_back.png);
+  background-size: cover;
+  padding: 19% 6% 16%;
+}
+
+.shop p {
+  padding: 5% 5%;
+  display: block;
+  font-size: min(5vw, 30px);
+  font-weight: bold;
+  color: rgb(18, 18, 18);
+  line-height: 2.211;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #fff;
+  opacity: 0.78;
+}
+
+.shop p span {
+  font-size: min(6vw, 38px);
+  position: relative;
+}
+
+.shop p span:nth-child(2):after {
+  content: '';
+  position: absolute;
+  top: 110%;
+  left: -2%;
+  width: min(70vw, 440px);
+  height: 16%;
+  background-color: #c0827f;
+}
+
+.shop p span:nth-child(7) {
+  margin-left: 1%;
+}
+
+.shop p span:nth-child(7):after {
+  content: '';
+  position: absolute;
+  top: 110%;
+  left: -2%;
+  width: min(33vw, 210px);
+  height: 16%;
+  background-color: #c0827f;
+}
+
+.access {
+  background-color: #fff3eb;
+  text-align: center;
+  padding-bottom: 10%;
+}
+
+.access .tap{
+  width: 100%;
+  padding: 0 5%;
+  margin-top: 10%;
+}
+
+.access img {
+  width: 100%;
+}
+
+.tap1,
+.tap2 {
+  position: relative;
+}
+
+.tap1 img:first-child {
+  display: block;
+  position: absolute;
+  top: 27%;
+  left: 23%;
+  width: 54%;
+}
+
+.tap1 img:nth-child(2),
+.tap2 img:first-child {
+  margin-bottom: 14%;
+}
+
+.tap1::after,
+.tap2::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  position: absolute;
+  border: min(5.5vw, 40px) solid #fff3ed;
+  border-top-color: #c0827f;
+  top: 90%;
+  right: 44%;
+  z-index: 1;
+}
+
+.tap3 {
+  margin-top: .5%;
+}
+
+.access p {
+  position: relative;
+  margin: 9%;
+  font-size: min(4.5vw, 30px);
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.access p::before, .access p::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  top: 57%;
+  display: inline-block;
+  width: 11%;
+  height: 3.5%;
+  background-color: #c0827f;
+  -webkit-transform: rotate(-60deg);
+  transform: rotate(-60deg);
+}
+
+.access p::before {
+  left: -1%;
+  -webkit-transform: rotate(60deg);
+  transform: rotate(60deg);
+}
+
+.access p::after {
+  right: -1%;
+}
+
+footer {
+  background-color: #c0827f;
+  text-align: center;
+  font-size: 1rem;
+  line-height: 2.5rem;
+  color: #fff;
+  letter-spacing: 0.03em;
+}
