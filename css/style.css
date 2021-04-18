@@ -5,7 +5,6 @@ html {
 }
 body{
   align-items: center;
-  background-color: #fff;
   color: #fff;
   font-family: "Hiragino Mincho Pro", "MS P明朝", "Times", serif;
   margin: 0 auto;
@@ -19,9 +18,9 @@ img {
 
 .fv_header {
   align-items: center;
-  /* background-color: #fff; */
+  background-color: #fff;
   display: flex;
-  height: min(7vh, 154px);
+  height: min(10vh, 154px);
   justify-content: space-between;
   padding: 4% 2% 4% 4%;
   width: 100%;
@@ -87,7 +86,7 @@ header img:nth-child(2) {
 }
 
 .action {
-  /* background-color: #fff; */
+  background-color: #fff;
   padding: 12% 0;
 }
 
