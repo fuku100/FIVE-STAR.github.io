@@ -55,9 +55,11 @@ header img:nth-child(2) {
   padding-top: 14%;
   padding-bottom: 14%;
   text-align: center;
+  background: url(../images/benefit_back.png) center center no-repeat;
+  background-attachment: fixed;
 }
 
-.benefit::before {
+/* .benefit::before {
   content:"";
   display:block;
   position:fixed;
@@ -68,7 +70,7 @@ header img:nth-child(2) {
   height:100vh;
   background: url(../images/benefit_back.png) center center no-repeat;
   background-size:cover;
-}
+} */
 
 .benefit img:first-child{
   width: 94%;
