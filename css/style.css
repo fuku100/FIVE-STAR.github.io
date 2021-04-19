@@ -4,18 +4,18 @@ html {
 }
 body{
   align-items: center;
-  color: #fff;
+  color: #1d1d1d;
   font-family: "Hiragino Mincho Pro", "MS P明朝", "Times", serif;
   margin: 0 auto;
   max-width: 800px;
   overscroll-behavior-y: none;
   width: 100%;
 }
-
 img {
   width: 100%;
 }
 
+/* header------------------------------------------------- */
 .fv_header {
   align-items: center;
   background-color: #fff;
@@ -52,6 +52,7 @@ header img:nth-child(2) {
   vertical-align: top;
 }
 
+/* benefit------------------------------------------------- */
 .benefit {
   padding-bottom: 14%;
   padding-top: 14%;
@@ -76,6 +77,70 @@ header img:nth-child(2) {
   width: 94%;
 }
 
+.benefit1,
+.benefit2,
+.benefit3 {
+  position: relative;
+}
+
+.benefit1 p:first-child,
+.benefit2 p:first-child,
+.benefit3 p:first-child {
+  display: block;
+  position: absolute;
+  background-color: #fff3eb;
+  width: 74%;
+  top: 14%;
+  font-size: min(4.5vw, 34.5px);
+  padding: 2% 0;
+}
+
+.benefit1 p:first-child {
+  top: 10%;
+
+}
+
+.benefit1 p:first-child,
+.benefit3 p:first-child {
+  left: 0;
+}
+
+.benefit2 p:first-child {
+  right: 0;
+}
+
+.benefit1 p:nth-child(3),
+.benefit2 p:nth-child(3),
+.benefit3 p:nth-child(3) {
+  display: block;
+  position: absolute;
+  bottom: 7%;
+  background-color: #fff3eb;
+  width: 74%;
+  font-size: min(3.9vw, 30.5px);
+  padding: 1% 0;
+}
+
+.benefit1 p:nth-child(3),
+.benefit3 p:nth-child(3) {
+  right: 0;
+}
+
+.benefit2 p:nth-child(3) {
+  left: 0;
+}
+
+.benefit1 img {
+  margin-top: 16%;
+  width: 90%;
+}
+
+.benefit2 img,
+.benefit3 img {
+  margin-top: 20%;
+  width: 90%;
+}
+
 .benefit img:nth-child(3) {
   margin-top: 8%;
 }
@@ -96,12 +161,14 @@ header img:nth-child(2) {
   width: min(64%, 380px);
 }
 
+/* merit------------------------------------------------- */
 .merit {
   background-color: #fff3eb;
   text-align: center;
 }
 
 h2 {
+  color: #fff;
   font-size: min(7.2vw, 56px);
   font-weight: normal;
   padding: 9.5%;
@@ -130,15 +197,15 @@ h2::after {
   vertical-align: top;
 }
 
+/* shop------------------------------------------------- */
 .shop {
-  background-image: url(../images/shop_back.png);
+  background-image: url(../images/shop_back.jpg);
   background-size: cover;
   padding: 19% 6% 16%;
 }
 
 .shop p {
   background-color: #fff;
-  color: rgb(18, 18, 18);
   display: block;
   font-size: min(5vw, 30px);
   font-weight: bold;
@@ -172,6 +239,8 @@ h2::after {
 .shop p span:nth-child(7):after {
   width: min(33vw, 210px);
 }
+
+/* access------------------------------------------------- */
 
 .access {
   background-color: #fff3eb;
@@ -251,6 +320,8 @@ h2::after {
   right: -1%;
 }
 
+
+/* footer------------------------------------------------- */
 footer {
   background-color: #c0827f;
   font-size: 1rem;
@@ -258,6 +329,7 @@ footer {
   line-height: 2.5rem;
   position: relative;
   text-align: center;
+  color: #fff;
 }
 
 @media (min-width:801px) {
