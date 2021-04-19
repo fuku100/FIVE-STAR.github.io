@@ -60,7 +60,9 @@ header img:nth-child(2) {
 }
 
 .benefit::before {
-  background: url(../images/benefit_back.png) center center no-repeat;
+  background: url(../images/benefit_back.jpg) center center no-repeat;
+  background-color: #4b4949f1;
+  background-blend-mode: multiply;
   background-size:cover;
   content:"";
   display:block;
@@ -97,7 +99,6 @@ header img:nth-child(2) {
 
 .benefit1 p:first-child {
   top: 10%;
-
 }
 
 .benefit1 p:first-child,
@@ -334,7 +335,7 @@ footer {
 
 @media (min-width:801px) {
   .benefit {
-    background: url(../images/benefit_back.png) center center no-repeat;
+    background: url(../images/benefit_back.jpg) center center no-repeat;
     background-attachment: fixed;
     background-size: cover;
   }
