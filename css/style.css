@@ -39,8 +39,6 @@ img {
 
 .fv_header a {
   line-height: .85;
-  margin: 0%;
-  padding: 0;
 }
 
 .fv_header img {
@@ -61,15 +59,15 @@ header img:nth-child(2) {
 
 .benefit::before {
   background: url(../images/benefit_back.jpg) center center no-repeat;
-  background-color: #4b4949f1;
   background-blend-mode: multiply;
+  background-color: #3f3f3f;
   background-size:cover;
   content:"";
   display:block;
   height:100vh;
-  left:0;
+  left: 0;
   position:fixed;
-  top:0;
+  top: 0;
   width:100%;
   z-index:-1;
 }
@@ -77,6 +75,41 @@ header img:nth-child(2) {
 .benefit img:first-child {
   margin-bottom: 14%;
   width: 94%;
+}
+
+.intro {
+  background-color: #c0827f;
+  color: #fff;
+  font-size: min(4.8vw, 40px);
+  font-weight: normal;
+  letter-spacing: -0.4px;
+  line-height: 1.8em;
+  margin-bottom: 8%;
+  padding: 9% 0;
+  position: relative;
+  text-shadow: 0 2px 3px #424242;
+}
+
+.intro::after {
+  background-color: #c0827f;
+  clip-path: polygon(100% 0%,0% 0%,50% 50%);
+  content: '';
+  height: 24%;
+  position: absolute;
+  right: 44%;
+  top: 99%;
+  width: 12%;
+  z-index: 1;
+}
+
+.intro span {
+  font-size: min(5.8vw, 48px);
+  letter-spacing: 0;
+}
+
+.intro span:first-child {
+  font-size: min(7vw, 56px);
+  letter-spacing: 0.5px;
 }
 
 .benefit1,
@@ -88,13 +121,13 @@ header img:nth-child(2) {
 .benefit1 p:first-child,
 .benefit2 p:first-child,
 .benefit3 p:first-child {
-  display: block;
-  position: absolute;
   background-color: #fff3eb;
-  width: 74%;
-  top: 14%;
-  font-size: min(4.5vw, 34.5px);
-  padding: 2% 0;
+  display: block;
+  font-size: min(4.7vw, 34.5px);
+  padding: 3% 0;
+  position: absolute;
+  top: 24%;
+  width: 82%;
 }
 
 .benefit1 p:first-child {
@@ -113,13 +146,13 @@ header img:nth-child(2) {
 .benefit1 p:nth-child(3),
 .benefit2 p:nth-child(3),
 .benefit3 p:nth-child(3) {
-  display: block;
-  position: absolute;
-  bottom: 7%;
   background-color: #fff3eb;
-  width: 74%;
+  bottom: 8%;
+  display: block;
   font-size: min(3.9vw, 30.5px);
   padding: 1% 0;
+  position: absolute;
+  width: 74%;
 }
 
 .benefit1 p:nth-child(3),
@@ -138,7 +171,7 @@ header img:nth-child(2) {
 
 .benefit2 img,
 .benefit3 img {
-  margin-top: 20%;
+  margin-top: 30%;
   width: 90%;
 }
 
@@ -169,12 +202,13 @@ header img:nth-child(2) {
 }
 
 h2 {
+  background-color: #c0827f;
   color: #fff;
   font-size: min(7.2vw, 56px);
   font-weight: normal;
+  margin: 0;
   padding: 9.5%;
   position: relative;
-  background-color: #c0827f;
 }
 
 h2::after {
@@ -242,7 +276,6 @@ h2::after {
 }
 
 /* access------------------------------------------------- */
-
 .access {
   background-color: #fff3eb;
   padding-bottom: 10%;
@@ -270,7 +303,7 @@ h2::after {
 
 .tap1 img:nth-child(2),
 .tap2 img:first-child {
-  margin-bottom: 14%;
+  margin-bottom: 11%;
 }
 
 .tap1::after,
@@ -321,22 +354,24 @@ h2::after {
   right: -1%;
 }
 
-
 /* footer------------------------------------------------- */
 footer {
   background-color: #c0827f;
+  color: #fff;
   font-size: 1rem;
   letter-spacing: 0.03em;
   line-height: 2.5rem;
+  margin: 0;
   position: relative;
   text-align: center;
-  color: #fff;
 }
 
 @media (min-width:801px) {
   .benefit {
     background: url(../images/benefit_back.jpg) center center no-repeat;
     background-attachment: fixed;
+    background-blend-mode: multiply;
+    background-color: #4b4949f1;
     background-size: cover;
   }
 
