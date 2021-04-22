@@ -327,7 +327,7 @@ h2::after {
   color: rgb(18, 18, 18);
   font-size: min(4.5vw, 30px);
   font-weight: bold;
-  margin: 9% 9% 0 9%;
+  margin: 9% 7% 0 7%;
   position: relative;
 }
 
@@ -368,7 +368,7 @@ footer {
 
 @media (min-width:801px) {
   .benefit {
-    background: url(../images/benefit_back.jpg) center center no-repeat;
+    background: url(../images/benefit_back_pc.jpg) no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: #4b4949f1;
@@ -377,5 +377,8 @@ footer {
 
   .benefit::before {
     display: none;
+  }
+  .access p {
+    margin: 9% 15% 0 15%;
   }
 }
