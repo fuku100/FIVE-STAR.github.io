@@ -60,7 +60,7 @@ header img:nth-child(2) {
 .benefit::before {
   background: url(../images/benefit_back.jpg) center center no-repeat;
   background-blend-mode: multiply;
-  background-color: #3f3f3f;
+  background-color: #252525ce;
   background-size:cover;
   content:"";
   display:block;
