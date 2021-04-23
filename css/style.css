@@ -368,11 +368,11 @@ footer {
 
 @media (min-width:801px) {
   .benefit {
-    background: url(../images/benefit_back_pc.jpg) no-repeat;
+    background: url(../images/benefit_back_pc.jpg) center center no-repeat;
     background-attachment: fixed;
     background-blend-mode: multiply;
     background-color: #4b4949f1;
-    background-size: cover;
+    background-size: contain;
   }
 
   .benefit::before {
